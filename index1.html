@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Number Printing</title>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css".css" type="text/css">
+</head>
+
+<body>
+    <div>
+        <fieldset>  
+        <legend >Login page</legend>
+        <style>
+            legend
+            {
+                text-align: center;
+            }
+        </style>
+        <h1 id="userInfo">User Information:</h1>   
+        
+        <!--it is an inline js application--> 
+        &nbsp; <label for="fanme"><span class="asterisk">*</span>First Name: </label>
+        <input type="text"  id="fanme" name="firstname" placeholder="your name is..." 
+        onfocus="this.style.backgroundColor='yellow'"
+        onblur="this.style.backgroundColor='red'"/> <br/> <br>
+        
+
+        
+        &nbsp;<label for="lastname">Last Name: </label>  
+        <input type="text" id="ln" name="lastname" placeholder="your last name is.."/> <br/>  <br>
+        
+        
+        &nbsp;<label for="Enter address">Enter Address: </label> 
+        <textarea rows="5" cols="20"></textarea>
+        
+        &nbsp;<label for="mail" placeholder="enter mail...">Email:</label>&nbsp;
+        <input type="text" id="mailee" placeholder="enter mail id....">
+
+
+
+
+        <br><br>
+        &nbsp;<label for="gender">Gender: </label> 
+        <br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="gender" name="gender" value="male"/>Male  
+        <input type="radio" id="gender" name="gender" value="female"/>Female <br/>  
+        
+        
+        <br><br>
+        <label for="Educational status">Educational status: </label>
+        <br><br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="school" name="school" value="school"/>
+        <label for="school">school</label>
+        <br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="college" name="college" value="college"/>
+        <label for="college">college</label>
+        <br><br>
+        
+        <label for="contry">Country</label>
+        <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>Malaysia</option>
+       
+        </select>
+        <br><br>
+        <input type="submit" id="submits" value="sign-up">  
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" id="signin" value="sign-in">
+
+        <br><br>
+        <button id="printButton">Print Numbers</button>
+        <p id="output"></p>
+
+
+
+                 
+    </div>  
+    </form>
+    </fieldset>
     <script src="first.js"></script>
-  </head>
-  <body>
-    <h1>PRINTING NUMBERS</h1>
-    <button id="printButton">Print Numbers</button>
-    <p id="output"></p>
-  </body>
+    
+</body>
 </html>
